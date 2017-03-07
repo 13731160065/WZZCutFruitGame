@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2625644E1E6D382800479819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2625644D1E6D382800479819 /* main.m */; };
+		262564511E6D382800479819 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564501E6D382800479819 /* AppDelegate.m */; };
+		262564561E6D382800479819 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564551E6D382800479819 /* GameViewController.m */; };
+		262564591E6D382800479819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262564571E6D382800479819 /* Main.storyboard */; };
+		2625645B1E6D382800479819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2625645A1E6D382800479819 /* Assets.xcassets */; };
+		2625645E1E6D382800479819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2625645C1E6D382800479819 /* LaunchScreen.storyboard */; };
+		262564691E6D382800479819 /* WZZCutFruitGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564681E6D382800479819 /* WZZCutFruitGameTests.m */; };
+		262564741E6D382800479819 /* WZZCutFruitGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564731E6D382800479819 /* WZZCutFruitGameUITests.m */; };
+		26E4FDE91E6E7380009867DC /* WZZRandomShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4FDE81E6E7380009867DC /* WZZRandomShape.m */; };
+		26E4FDEC1E6EA59E009867DC /* WZZGameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4FDEB1E6EA59E009867DC /* WZZGameHelper.m */; };
+		26E4FDEE1E6EAE1E009867DC /* GeometryFighter.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E4FDED1E6EAE1E009867DC /* GeometryFighter.scnassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		262564651E6D382800479819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 262564411E6D382800479819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 262564481E6D382800479819;
+			remoteInfo = WZZCutFruitGame;
+		};
+		262564701E6D382800479819 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 262564411E6D382800479819 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 262564481E6D382800479819;
+			remoteInfo = WZZCutFruitGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		262564491E6D382800479819 /* WZZCutFruitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZZCutFruitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2625644D1E6D382800479819 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2625644F1E6D382800479819 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		262564501E6D382800479819 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		262564541E6D382800479819 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		262564551E6D382800479819 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		262564581E6D382800479819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2625645A1E6D382800479819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2625645D1E6D382800479819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2625645F1E6D382800479819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		262564641E6D382800479819 /* WZZCutFruitGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZZCutFruitGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		262564681E6D382800479819 /* WZZCutFruitGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZZCutFruitGameTests.m; sourceTree = "<group>"; };
+		2625646A1E6D382800479819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2625646F1E6D382800479819 /* WZZCutFruitGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZZCutFruitGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		262564731E6D382800479819 /* WZZCutFruitGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZZCutFruitGameUITests.m; sourceTree = "<group>"; };
+		262564751E6D382800479819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E4FDE71E6E7380009867DC /* WZZRandomShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZRandomShape.h; sourceTree = "<group>"; };
+		26E4FDE81E6E7380009867DC /* WZZRandomShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZRandomShape.m; sourceTree = "<group>"; };
+		26E4FDEA1E6EA59E009867DC /* WZZGameHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZGameHelper.h; sourceTree = "<group>"; };
+		26E4FDEB1E6EA59E009867DC /* WZZGameHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZGameHelper.m; sourceTree = "<group>"; };
+		26E4FDED1E6EAE1E009867DC /* GeometryFighter.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = GeometryFighter.scnassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		262564461E6D382800479819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		262564611E6D382800479819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2625646C1E6D382800479819 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		262564401E6D382800479819 = {
+			isa = PBXGroup;
+			children = (
+				2625644B1E6D382800479819 /* WZZCutFruitGame */,
+				262564671E6D382800479819 /* WZZCutFruitGameTests */,
+				262564721E6D382800479819 /* WZZCutFruitGameUITests */,
+				2625644A1E6D382800479819 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2625644A1E6D382800479819 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				262564491E6D382800479819 /* WZZCutFruitGame.app */,
+				262564641E6D382800479819 /* WZZCutFruitGameTests.xctest */,
+				2625646F1E6D382800479819 /* WZZCutFruitGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2625644B1E6D382800479819 /* WZZCutFruitGame */ = {
+			isa = PBXGroup;
+			children = (
+				2625644F1E6D382800479819 /* AppDelegate.h */,
+				262564501E6D382800479819 /* AppDelegate.m */,
+				262564541E6D382800479819 /* GameViewController.h */,
+				262564551E6D382800479819 /* GameViewController.m */,
+				26E4FDE71E6E7380009867DC /* WZZRandomShape.h */,
+				26E4FDE81E6E7380009867DC /* WZZRandomShape.m */,
+				26E4FDEA1E6EA59E009867DC /* WZZGameHelper.h */,
+				26E4FDEB1E6EA59E009867DC /* WZZGameHelper.m */,
+				262564571E6D382800479819 /* Main.storyboard */,
+				26E4FDED1E6EAE1E009867DC /* GeometryFighter.scnassets */,
+				2625645A1E6D382800479819 /* Assets.xcassets */,
+				2625645C1E6D382800479819 /* LaunchScreen.storyboard */,
+				2625645F1E6D382800479819 /* Info.plist */,
+				2625644C1E6D382800479819 /* Supporting Files */,
+			);
+			path = WZZCutFruitGame;
+			sourceTree = "<group>";
+		};
+		2625644C1E6D382800479819 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2625644D1E6D382800479819 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		262564671E6D382800479819 /* WZZCutFruitGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				262564681E6D382800479819 /* WZZCutFruitGameTests.m */,
+				2625646A1E6D382800479819 /* Info.plist */,
+			);
+			path = WZZCutFruitGameTests;
+			sourceTree = "<group>";
+		};
+		262564721E6D382800479819 /* WZZCutFruitGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				262564731E6D382800479819 /* WZZCutFruitGameUITests.m */,
+				262564751E6D382800479819 /* Info.plist */,
+			);
+			path = WZZCutFruitGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		262564481E6D382800479819 /* WZZCutFruitGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 262564781E6D382800479819 /* Build configuration list for PBXNativeTarget "WZZCutFruitGame" */;
+			buildPhases = (
+				262564451E6D382800479819 /* Sources */,
+				262564461E6D382800479819 /* Frameworks */,
+				262564471E6D382800479819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZZCutFruitGame;
+			productName = WZZCutFruitGame;
+			productReference = 262564491E6D382800479819 /* WZZCutFruitGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		262564631E6D382800479819 /* WZZCutFruitGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2625647B1E6D382800479819 /* Build configuration list for PBXNativeTarget "WZZCutFruitGameTests" */;
+			buildPhases = (
+				262564601E6D382800479819 /* Sources */,
+				262564611E6D382800479819 /* Frameworks */,
+				262564621E6D382800479819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				262564661E6D382800479819 /* PBXTargetDependency */,
+			);
+			name = WZZCutFruitGameTests;
+			productName = WZZCutFruitGameTests;
+			productReference = 262564641E6D382800479819 /* WZZCutFruitGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2625646E1E6D382800479819 /* WZZCutFruitGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2625647E1E6D382800479819 /* Build configuration list for PBXNativeTarget "WZZCutFruitGameUITests" */;
+			buildPhases = (
+				2625646B1E6D382800479819 /* Sources */,
+				2625646C1E6D382800479819 /* Frameworks */,
+				2625646D1E6D382800479819 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				262564711E6D382800479819 /* PBXTargetDependency */,
+			);
+			name = WZZCutFruitGameUITests;
+			productName = WZZCutFruitGameUITests;
+			productReference = 2625646F1E6D382800479819 /* WZZCutFruitGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		262564411E6D382800479819 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wzz;
+				TargetAttributes = {
+					262564481E6D382800479819 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4TGUD96RNM;
+						ProvisioningStyle = Automatic;
+					};
+					262564631E6D382800479819 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 262564481E6D382800479819;
+					};
+					2625646E1E6D382800479819 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 262564481E6D382800479819;
+					};
+				};
+			};
+			buildConfigurationList = 262564441E6D382800479819 /* Build configuration list for PBXProject "WZZCutFruitGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 262564401E6D382800479819;
+			productRefGroup = 2625644A1E6D382800479819 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				262564481E6D382800479819 /* WZZCutFruitGame */,
+				262564631E6D382800479819 /* WZZCutFruitGameTests */,
+				2625646E1E6D382800479819 /* WZZCutFruitGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		262564471E6D382800479819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2625645E1E6D382800479819 /* LaunchScreen.storyboard in Resources */,
+				2625645B1E6D382800479819 /* Assets.xcassets in Resources */,
+				262564591E6D382800479819 /* Main.storyboard in Resources */,
+				26E4FDEE1E6EAE1E009867DC /* GeometryFighter.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		262564621E6D382800479819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2625646D1E6D382800479819 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		262564451E6D382800479819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E4FDE91E6E7380009867DC /* WZZRandomShape.m in Sources */,
+				262564511E6D382800479819 /* AppDelegate.m in Sources */,
+				262564561E6D382800479819 /* GameViewController.m in Sources */,
+				26E4FDEC1E6EA59E009867DC /* WZZGameHelper.m in Sources */,
+				2625644E1E6D382800479819 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		262564601E6D382800479819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262564691E6D382800479819 /* WZZCutFruitGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2625646B1E6D382800479819 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262564741E6D382800479819 /* WZZCutFruitGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		262564661E6D382800479819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 262564481E6D382800479819 /* WZZCutFruitGame */;
+			targetProxy = 262564651E6D382800479819 /* PBXContainerItemProxy */;
+		};
+		262564711E6D382800479819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 262564481E6D382800479819 /* WZZCutFruitGame */;
+			targetProxy = 262564701E6D382800479819 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		262564571E6D382800479819 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				262564581E6D382800479819 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2625645C1E6D382800479819 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2625645D1E6D382800479819 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		262564761E6D382800479819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		262564771E6D382800479819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		262564791E6D382800479819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4TGUD96RNM;
+				INFOPLIST_FILE = WZZCutFruitGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2625647A1E6D382800479819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4TGUD96RNM;
+				INFOPLIST_FILE = WZZCutFruitGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2625647C1E6D382800479819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WZZCutFruitGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZCutFruitGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZZCutFruitGame.app/WZZCutFruitGame";
+			};
+			name = Debug;
+		};
+		2625647D1E6D382800479819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WZZCutFruitGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZCutFruitGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZZCutFruitGame.app/WZZCutFruitGame";
+			};
+			name = Release;
+		};
+		2625647F1E6D382800479819 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WZZCutFruitGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZCutFruitGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZZCutFruitGame;
+			};
+			name = Debug;
+		};
+		262564801E6D382800479819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WZZCutFruitGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.WZZCutFruitGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WZZCutFruitGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		262564441E6D382800479819 /* Build configuration list for PBXProject "WZZCutFruitGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262564761E6D382800479819 /* Debug */,
+				262564771E6D382800479819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		262564781E6D382800479819 /* Build configuration list for PBXNativeTarget "WZZCutFruitGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				262564791E6D382800479819 /* Debug */,
+				2625647A1E6D382800479819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2625647B1E6D382800479819 /* Build configuration list for PBXNativeTarget "WZZCutFruitGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2625647C1E6D382800479819 /* Debug */,
+				2625647D1E6D382800479819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2625647E1E6D382800479819 /* Build configuration list for PBXNativeTarget "WZZCutFruitGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2625647F1E6D382800479819 /* Debug */,
+				262564801E6D382800479819 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 262564411E6D382800479819 /* Project object */;
+}
