@@ -9,6 +9,7 @@
 #import "GameViewController.h"
 @import SceneKit;
 #import "WZZRandomShape.h"
+#import "WZZGameHelper.h"
 
 @interface GameViewController ()
 {
@@ -114,6 +115,12 @@
     geoNode = [SCNNode nodeWithGeometry:geo];
     geoNode.physicsBody = [SCNPhysicsBody bodyWithType:SCNPhysicsBodyTypeDynamic shape:nil];
     [mainScene.rootNode addChildNode:geoNode];
+    
+    float randomX = [WZZGameHelper floatRandomWithMax:2 min:-2];
+    float randomY = [WZZGameHelper floatRandomWithMax:10 min:18];
+    SCNVector3 force = SCNVector3Make(randomX, randomY, 0);
+    SCNVector3 posi = SCNVector3Make(0.05, 0.05, 0.05);
+    [geoNode.physicsBody applyForce:force atPosition:posi impulse:YES];
 }
 
 - (BOOL)shouldAutorotate {

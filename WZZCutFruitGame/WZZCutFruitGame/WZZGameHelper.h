@@ -40,9 +40,9 @@ typedef enum {
 - (void)shakeNode:(SCNNode *)node;
 
 #pragma mark - 计算
-- (double)doubleRandomWithMax:(double)max min:(double)min;
-- (float)floatRandomWithMax:(float)max min:(float)min;
-- (int)intRandomWithMax:(int)max min:(int)min;
++ (double)doubleRandomWithMax:(double)max min:(double)min;
++ (float)floatRandomWithMax:(float)max min:(float)min;
++ (int)intRandomWithMax:(int)max min:(int)min;
 
 + (SCNAction *)waitForDurationThenRemoveFromParent:(NSTimeInterval)dur;
 + (SCNAction *)waitForDuration:(NSTimeInterval)dur thenRunBlock:(void(^)(SCNNode *))aBlock;
