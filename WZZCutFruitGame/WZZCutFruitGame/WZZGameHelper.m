@@ -81,11 +81,11 @@ static WZZGameHelper * hhh;
 
 #pragma mark - 计算
 + (double)doubleRandomWithMax:(double)max min:(double)min {
-    return arc4random()%(int)(max-min)+min;
+    return (float)(arc4random()%(int)(max-min)+min);
 }
 
 + (float)floatRandomWithMax:(float)max min:(float)min {
-    return arc4random()%(int)(max-min)+min;
+    return (float)(arc4random()%(int)(max-min)+min);
 }
 
 + (int)intRandomWithMax:(int)max min:(int)min {

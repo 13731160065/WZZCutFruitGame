@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <SceneKit/SceneKit.h>
+#import "CardboardSDK.h"
+#import "CBDViewController.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : CBDViewController
 
 @end

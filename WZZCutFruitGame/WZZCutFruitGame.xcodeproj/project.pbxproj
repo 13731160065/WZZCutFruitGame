@@ -10,7 +10,6 @@
 		2625644E1E6D382800479819 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2625644D1E6D382800479819 /* main.m */; };
 		262564511E6D382800479819 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564501E6D382800479819 /* AppDelegate.m */; };
 		262564561E6D382800479819 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564551E6D382800479819 /* GameViewController.m */; };
-		262564591E6D382800479819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262564571E6D382800479819 /* Main.storyboard */; };
 		2625645B1E6D382800479819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2625645A1E6D382800479819 /* Assets.xcassets */; };
 		2625645E1E6D382800479819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2625645C1E6D382800479819 /* LaunchScreen.storyboard */; };
 		262564691E6D382800479819 /* WZZCutFruitGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262564681E6D382800479819 /* WZZCutFruitGameTests.m */; };
@@ -18,6 +17,29 @@
 		26E4FDE91E6E7380009867DC /* WZZRandomShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4FDE81E6E7380009867DC /* WZZRandomShape.m */; };
 		26E4FDEC1E6EA59E009867DC /* WZZGameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E4FDEB1E6EA59E009867DC /* WZZGameHelper.m */; };
 		26E4FDEE1E6EAE1E009867DC /* GeometryFighter.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E4FDED1E6EAE1E009867DC /* GeometryFighter.scnassets */; };
+		71C218AB1E7060A100463335 /* CardboardDeviceParams.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2187F1E7060A100463335 /* CardboardDeviceParams.mm */; };
+		71C218AC1E7060A100463335 /* CardboardUnity.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218811E7060A100463335 /* CardboardUnity.mm */; };
+		71C218AD1E7060A100463335 /* Distortion.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218831E7060A100463335 /* Distortion.mm */; };
+		71C218AE1E7060A100463335 /* DistortionRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218851E7060A100463335 /* DistortionRenderer.mm */; };
+		71C218AF1E7060A100463335 /* Eye.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218871E7060A100463335 /* Eye.mm */; };
+		71C218B01E7060A100463335 /* FieldOfView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218891E7060A100463335 /* FieldOfView.mm */; };
+		71C218B11E7060A100463335 /* GLStateBackup.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2188B1E7060A100463335 /* GLStateBackup.mm */; };
+		71C218B21E7060A100463335 /* HeadMountedDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2188D1E7060A100463335 /* HeadMountedDisplay.mm */; };
+		71C218B31E7060A100463335 /* HeadTransform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2188F1E7060A100463335 /* HeadTransform.mm */; };
+		71C218B41E7060A100463335 /* ScreenParams.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218911E7060A100463335 /* ScreenParams.mm */; };
+		71C218B51E7060A100463335 /* HeadTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218941E7060A100463335 /* HeadTracker.mm */; };
+		71C218B61E7060A100463335 /* Matrix3x3d.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218971E7060A100463335 /* Matrix3x3d.mm */; };
+		71C218B71E7060A100463335 /* OrientationEKF.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218991E7060A100463335 /* OrientationEKF.mm */; };
+		71C218B81E7060A100463335 /* SO3Util.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2189B1E7060A100463335 /* SO3Util.mm */; };
+		71C218B91E7060A100463335 /* Vector3d.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2189D1E7060A100463335 /* Vector3d.mm */; };
+		71C218BA1E7060A100463335 /* MagnetSensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C2189F1E7060A100463335 /* MagnetSensor.mm */; };
+		71C218BB1E7060A100463335 /* Viewport.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218A11E7060A100463335 /* Viewport.mm */; };
+		71C218BC1E7060A100463335 /* CBDStereoGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C218A41E7060A100463335 /* CBDStereoGLView.m */; };
+		71C218BD1E7060A100463335 /* CBDViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71C218A61E7060A100463335 /* CBDViewController.mm */; };
+		71C218BE1E7060A100463335 /* GLHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C218AA1E7060A100463335 /* GLHelpers.m */; };
+		71C218C11E7062D200463335 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C218C01E7062D200463335 /* AudioToolbox.framework */; };
+		71C218C31E7062DA00463335 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C218C21E7062DA00463335 /* CoreMotion.framework */; };
+		71C218C51E7062E300463335 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C218C41E7062E300463335 /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +66,6 @@
 		262564501E6D382800479819 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		262564541E6D382800479819 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		262564551E6D382800479819 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		262564581E6D382800479819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2625645A1E6D382800479819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2625645D1E6D382800479819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2625645F1E6D382800479819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +80,51 @@
 		26E4FDEA1E6EA59E009867DC /* WZZGameHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZGameHelper.h; sourceTree = "<group>"; };
 		26E4FDEB1E6EA59E009867DC /* WZZGameHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZGameHelper.m; sourceTree = "<group>"; };
 		26E4FDED1E6EAE1E009867DC /* GeometryFighter.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = GeometryFighter.scnassets; sourceTree = "<group>"; };
+		71C2187E1E7060A100463335 /* CardboardDeviceParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardboardDeviceParams.h; sourceTree = "<group>"; };
+		71C2187F1E7060A100463335 /* CardboardDeviceParams.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardboardDeviceParams.mm; sourceTree = "<group>"; };
+		71C218801E7060A100463335 /* CardboardUnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardboardUnity.h; sourceTree = "<group>"; };
+		71C218811E7060A100463335 /* CardboardUnity.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CardboardUnity.mm; sourceTree = "<group>"; };
+		71C218821E7060A100463335 /* Distortion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distortion.h; sourceTree = "<group>"; };
+		71C218831E7060A100463335 /* Distortion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Distortion.mm; sourceTree = "<group>"; };
+		71C218841E7060A100463335 /* DistortionRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistortionRenderer.h; sourceTree = "<group>"; };
+		71C218851E7060A100463335 /* DistortionRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DistortionRenderer.mm; sourceTree = "<group>"; };
+		71C218861E7060A100463335 /* Eye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eye.h; sourceTree = "<group>"; };
+		71C218871E7060A100463335 /* Eye.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Eye.mm; sourceTree = "<group>"; };
+		71C218881E7060A100463335 /* FieldOfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldOfView.h; sourceTree = "<group>"; };
+		71C218891E7060A100463335 /* FieldOfView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FieldOfView.mm; sourceTree = "<group>"; };
+		71C2188A1E7060A100463335 /* GLStateBackup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStateBackup.h; sourceTree = "<group>"; };
+		71C2188B1E7060A100463335 /* GLStateBackup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLStateBackup.mm; sourceTree = "<group>"; };
+		71C2188C1E7060A100463335 /* HeadMountedDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadMountedDisplay.h; sourceTree = "<group>"; };
+		71C2188D1E7060A100463335 /* HeadMountedDisplay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HeadMountedDisplay.mm; sourceTree = "<group>"; };
+		71C2188E1E7060A100463335 /* HeadTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTransform.h; sourceTree = "<group>"; };
+		71C2188F1E7060A100463335 /* HeadTransform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HeadTransform.mm; sourceTree = "<group>"; };
+		71C218901E7060A100463335 /* ScreenParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenParams.h; sourceTree = "<group>"; };
+		71C218911E7060A100463335 /* ScreenParams.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScreenParams.mm; sourceTree = "<group>"; };
+		71C218931E7060A100463335 /* HeadTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTracker.h; sourceTree = "<group>"; };
+		71C218941E7060A100463335 /* HeadTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HeadTracker.mm; sourceTree = "<group>"; };
+		71C218961E7060A100463335 /* Matrix3x3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3x3d.h; sourceTree = "<group>"; };
+		71C218971E7060A100463335 /* Matrix3x3d.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Matrix3x3d.mm; sourceTree = "<group>"; };
+		71C218981E7060A100463335 /* OrientationEKF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationEKF.h; sourceTree = "<group>"; };
+		71C218991E7060A100463335 /* OrientationEKF.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OrientationEKF.mm; sourceTree = "<group>"; };
+		71C2189A1E7060A100463335 /* SO3Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SO3Util.h; sourceTree = "<group>"; };
+		71C2189B1E7060A100463335 /* SO3Util.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SO3Util.mm; sourceTree = "<group>"; };
+		71C2189C1E7060A100463335 /* Vector3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3d.h; sourceTree = "<group>"; };
+		71C2189D1E7060A100463335 /* Vector3d.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Vector3d.mm; sourceTree = "<group>"; };
+		71C2189E1E7060A100463335 /* MagnetSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagnetSensor.h; sourceTree = "<group>"; };
+		71C2189F1E7060A100463335 /* MagnetSensor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MagnetSensor.mm; sourceTree = "<group>"; };
+		71C218A01E7060A100463335 /* Viewport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Viewport.h; sourceTree = "<group>"; };
+		71C218A11E7060A100463335 /* Viewport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Viewport.mm; sourceTree = "<group>"; };
+		71C218A21E7060A100463335 /* CardboardSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardboardSDK.h; sourceTree = "<group>"; };
+		71C218A31E7060A100463335 /* CBDStereoGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDStereoGLView.h; sourceTree = "<group>"; };
+		71C218A41E7060A100463335 /* CBDStereoGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDStereoGLView.m; sourceTree = "<group>"; };
+		71C218A51E7060A100463335 /* CBDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDViewController.h; sourceTree = "<group>"; };
+		71C218A61E7060A100463335 /* CBDViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CBDViewController.mm; sourceTree = "<group>"; };
+		71C218A81E7060A100463335 /* DebugUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUtils.h; sourceTree = "<group>"; };
+		71C218A91E7060A100463335 /* GLHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLHelpers.h; sourceTree = "<group>"; };
+		71C218AA1E7060A100463335 /* GLHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLHelpers.m; sourceTree = "<group>"; };
+		71C218C01E7062D200463335 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		71C218C21E7062DA00463335 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		71C218C41E7062E300463335 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +132,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C218C51E7062E300463335 /* GLKit.framework in Frameworks */,
+				71C218C31E7062DA00463335 /* CoreMotion.framework in Frameworks */,
+				71C218C11E7062D200463335 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +158,12 @@
 		262564401E6D382800479819 = {
 			isa = PBXGroup;
 			children = (
+				71C2187C1E7060A100463335 /* CardboardSDK */,
 				2625644B1E6D382800479819 /* WZZCutFruitGame */,
 				262564671E6D382800479819 /* WZZCutFruitGameTests */,
 				262564721E6D382800479819 /* WZZCutFruitGameUITests */,
 				2625644A1E6D382800479819 /* Products */,
+				71C218BF1E7062D200463335 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +188,6 @@
 				26E4FDE81E6E7380009867DC /* WZZRandomShape.m */,
 				26E4FDEA1E6EA59E009867DC /* WZZGameHelper.h */,
 				26E4FDEB1E6EA59E009867DC /* WZZGameHelper.m */,
-				262564571E6D382800479819 /* Main.storyboard */,
 				26E4FDED1E6EAE1E009867DC /* GeometryFighter.scnassets */,
 				2625645A1E6D382800479819 /* Assets.xcassets */,
 				2625645C1E6D382800479819 /* LaunchScreen.storyboard */,
@@ -151,6 +221,97 @@
 				262564751E6D382800479819 /* Info.plist */,
 			);
 			path = WZZCutFruitGameUITests;
+			sourceTree = "<group>";
+		};
+		71C2187C1E7060A100463335 /* CardboardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				71C2187D1E7060A100463335 /* Cardboard */,
+				71C218A21E7060A100463335 /* CardboardSDK.h */,
+				71C218A31E7060A100463335 /* CBDStereoGLView.h */,
+				71C218A41E7060A100463335 /* CBDStereoGLView.m */,
+				71C218A51E7060A100463335 /* CBDViewController.h */,
+				71C218A61E7060A100463335 /* CBDViewController.mm */,
+				71C218A71E7060A100463335 /* Misc */,
+			);
+			path = CardboardSDK;
+			sourceTree = "<group>";
+		};
+		71C2187D1E7060A100463335 /* Cardboard */ = {
+			isa = PBXGroup;
+			children = (
+				71C2187E1E7060A100463335 /* CardboardDeviceParams.h */,
+				71C2187F1E7060A100463335 /* CardboardDeviceParams.mm */,
+				71C218801E7060A100463335 /* CardboardUnity.h */,
+				71C218811E7060A100463335 /* CardboardUnity.mm */,
+				71C218821E7060A100463335 /* Distortion.h */,
+				71C218831E7060A100463335 /* Distortion.mm */,
+				71C218841E7060A100463335 /* DistortionRenderer.h */,
+				71C218851E7060A100463335 /* DistortionRenderer.mm */,
+				71C218861E7060A100463335 /* Eye.h */,
+				71C218871E7060A100463335 /* Eye.mm */,
+				71C218881E7060A100463335 /* FieldOfView.h */,
+				71C218891E7060A100463335 /* FieldOfView.mm */,
+				71C2188A1E7060A100463335 /* GLStateBackup.h */,
+				71C2188B1E7060A100463335 /* GLStateBackup.mm */,
+				71C2188C1E7060A100463335 /* HeadMountedDisplay.h */,
+				71C2188D1E7060A100463335 /* HeadMountedDisplay.mm */,
+				71C2188E1E7060A100463335 /* HeadTransform.h */,
+				71C2188F1E7060A100463335 /* HeadTransform.mm */,
+				71C218901E7060A100463335 /* ScreenParams.h */,
+				71C218911E7060A100463335 /* ScreenParams.mm */,
+				71C218921E7060A100463335 /* Sensors */,
+				71C218A01E7060A100463335 /* Viewport.h */,
+				71C218A11E7060A100463335 /* Viewport.mm */,
+			);
+			path = Cardboard;
+			sourceTree = "<group>";
+		};
+		71C218921E7060A100463335 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				71C218931E7060A100463335 /* HeadTracker.h */,
+				71C218941E7060A100463335 /* HeadTracker.mm */,
+				71C218951E7060A100463335 /* Internal */,
+				71C2189E1E7060A100463335 /* MagnetSensor.h */,
+				71C2189F1E7060A100463335 /* MagnetSensor.mm */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		71C218951E7060A100463335 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				71C218961E7060A100463335 /* Matrix3x3d.h */,
+				71C218971E7060A100463335 /* Matrix3x3d.mm */,
+				71C218981E7060A100463335 /* OrientationEKF.h */,
+				71C218991E7060A100463335 /* OrientationEKF.mm */,
+				71C2189A1E7060A100463335 /* SO3Util.h */,
+				71C2189B1E7060A100463335 /* SO3Util.mm */,
+				71C2189C1E7060A100463335 /* Vector3d.h */,
+				71C2189D1E7060A100463335 /* Vector3d.mm */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		71C218A71E7060A100463335 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				71C218A81E7060A100463335 /* DebugUtils.h */,
+				71C218A91E7060A100463335 /* GLHelpers.h */,
+				71C218AA1E7060A100463335 /* GLHelpers.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		71C218BF1E7062D200463335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71C218C41E7062E300463335 /* GLKit.framework */,
+				71C218C21E7062DA00463335 /* CoreMotion.framework */,
+				71C218C01E7062D200463335 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +381,7 @@
 				TargetAttributes = {
 					262564481E6D382800479819 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 4TGUD96RNM;
+						DevelopmentTeam = GMLKLDG682;
 						ProvisioningStyle = Automatic;
 					};
 					262564631E6D382800479819 = {
@@ -262,7 +423,6 @@
 			files = (
 				2625645E1E6D382800479819 /* LaunchScreen.storyboard in Resources */,
 				2625645B1E6D382800479819 /* Assets.xcassets in Resources */,
-				262564591E6D382800479819 /* Main.storyboard in Resources */,
 				26E4FDEE1E6EAE1E009867DC /* GeometryFighter.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,9 +449,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				26E4FDE91E6E7380009867DC /* WZZRandomShape.m in Sources */,
+				71C218B71E7060A100463335 /* OrientationEKF.mm in Sources */,
 				262564511E6D382800479819 /* AppDelegate.m in Sources */,
+				71C218B11E7060A100463335 /* GLStateBackup.mm in Sources */,
+				71C218BD1E7060A100463335 /* CBDViewController.mm in Sources */,
+				71C218AB1E7060A100463335 /* CardboardDeviceParams.mm in Sources */,
+				71C218B91E7060A100463335 /* Vector3d.mm in Sources */,
+				71C218B51E7060A100463335 /* HeadTracker.mm in Sources */,
+				71C218BB1E7060A100463335 /* Viewport.mm in Sources */,
+				71C218B61E7060A100463335 /* Matrix3x3d.mm in Sources */,
+				71C218BA1E7060A100463335 /* MagnetSensor.mm in Sources */,
 				262564561E6D382800479819 /* GameViewController.m in Sources */,
+				71C218AE1E7060A100463335 /* DistortionRenderer.mm in Sources */,
+				71C218AF1E7060A100463335 /* Eye.mm in Sources */,
+				71C218B81E7060A100463335 /* SO3Util.mm in Sources */,
+				71C218B41E7060A100463335 /* ScreenParams.mm in Sources */,
+				71C218AD1E7060A100463335 /* Distortion.mm in Sources */,
+				71C218BE1E7060A100463335 /* GLHelpers.m in Sources */,
 				26E4FDEC1E6EA59E009867DC /* WZZGameHelper.m in Sources */,
+				71C218AC1E7060A100463335 /* CardboardUnity.mm in Sources */,
+				71C218BC1E7060A100463335 /* CBDStereoGLView.m in Sources */,
+				71C218B01E7060A100463335 /* FieldOfView.mm in Sources */,
+				71C218B21E7060A100463335 /* HeadMountedDisplay.mm in Sources */,
+				71C218B31E7060A100463335 /* HeadTransform.mm in Sources */,
 				2625644E1E6D382800479819 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +508,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		262564571E6D382800479819 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				262564581E6D382800479819 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2625645C1E6D382800479819 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,11 +614,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4TGUD96RNM;
+				DEVELOPMENT_TEAM = GMLKLDG682;
 				INFOPLIST_FILE = WZZCutFruitGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,11 +629,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4TGUD96RNM;
+				DEVELOPMENT_TEAM = GMLKLDG682;
 				INFOPLIST_FILE = WZZCutFruitGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
