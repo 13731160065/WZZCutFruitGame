@@ -11,6 +11,8 @@
 #import "WZZRandomShape.h"
 #import "WZZGameHelper.h"
 
+#define SHOWDEBUGINFO 1
+
 @interface GameViewController ()<SCNSceneRendererDelegate, CBDStereoRendererDelegate>
 {
     SCNView * mainView;
@@ -40,14 +42,16 @@
 - (void)setup {
     //创建scn视图
     mainView = [[SCNView alloc] initWithFrame:self.view.bounds];
-//    [self.view addSubview:mainView];
+//    [self.view addSubview:mainView];//使用vr功能不能往上添加视图需要用vr里的glview
     mainView.playing = YES;
+#if SHOWDEBUGINFO
     // 1
     mainView.showsStatistics = YES;
     // 2
     mainView.allowsCameraControl = YES;
     // 3
     mainView.autoenablesDefaultLighting = YES;
+#endif
     
     //创建场景
     mainScene = [SCNScene scene];
@@ -72,20 +76,6 @@
     [cameraContral addChildNode:cameraNode];
     
     mainView.delegate = self;
-    //添加方块
-    //    [self spawnShape];
-//    //判断时间
-//    testTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 repeats:YES block:^(NSTimer * _Nonnull timer) {
-//        if (timee > mainTime) {//每隔多少秒一次
-//            [self spawnShape];
-//            mainTime = timee+(NSTimeInterval)([WZZGameHelper floatRandomWithMax:3 min:1]);
-//        }
-//        [self cleanScene];//清除超出屏幕的node
-//    }];
-//    //时间++
-//    timeTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f repeats:YES block:^(NSTimer * _Nonnull timer) {
-//        timee++;
-//    }];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -93,6 +83,53 @@
         [geoNode removeFromParentNode];
         [self spawnShape];
     }
+}
+
+- (void)makePosi {
+    
+    SCNBox * kx = [SCNBox boxWithWidth:0.4 height:0.4 length:0.4 chamferRadius:0];
+    SCNBox * ky = [SCNBox boxWithWidth:0.4 height:0.4 length:0.4 chamferRadius:0];
+    SCNBox * kz = [SCNBox boxWithWidth:0.4 height:0.4 length:0.4 chamferRadius:0];
+    
+    kx.materials.firstObject.diffuse.contents = [UIColor redColor];
+    ky.materials.firstObject.diffuse.contents = [UIColor yellowColor];
+    kz.materials.firstObject.diffuse.contents = [UIColor greenColor];
+    
+    SCNNode * knx = [SCNNode nodeWithGeometry:kx];
+    SCNNode * kny = [SCNNode nodeWithGeometry:ky];
+    SCNNode * knz = [SCNNode nodeWithGeometry:kz];
+    
+    knx.position = SCNVector3Make(1, 0, 0);
+    kny.position = SCNVector3Make(0, 1, 0);
+    knz.position = SCNVector3Make(0, 0, 1);
+    
+    [mainScene.rootNode addChildNode:knx];
+    [mainScene.rootNode addChildNode:kny];
+    [mainScene.rootNode addChildNode:knz];
+    
+    SCNCylinder * cx = [SCNCylinder cylinderWithRadius:0.2 height:10];
+    SCNCylinder * cy = [SCNCylinder cylinderWithRadius:0.2 height:10];
+    SCNCylinder * cz = [SCNCylinder cylinderWithRadius:0.2 height:10];
+    
+    cx.materials.firstObject.diffuse.contents = [UIColor redColor];
+    cy.materials.firstObject.diffuse.contents = [UIColor yellowColor];
+    cz.materials.firstObject.diffuse.contents = [UIColor greenColor];
+    
+    SCNNode * nx = [SCNNode nodeWithGeometry:cx];
+    SCNNode * ny = [SCNNode nodeWithGeometry:cy];
+    SCNNode * nz = [SCNNode nodeWithGeometry:cz];
+    
+    nx.position = SCNVector3Make(0, 0, 0);
+    ny.position = SCNVector3Make(0, 0, 0);
+    nz.position = SCNVector3Make(0, 0, 0);
+    
+    nx.eulerAngles = SCNVector3Make(0, 0, M_PI_2);
+    ny.eulerAngles = SCNVector3Make(0, 0, 0);
+    nz.eulerAngles = SCNVector3Make(M_PI_2, 0, 0);
+    
+    [mainScene.rootNode addChildNode:nx];
+    [mainScene.rootNode addChildNode:ny];
+    [mainScene.rootNode addChildNode:nz];
 }
 
 - (void)spawnShape {
@@ -198,6 +235,10 @@
     
     [self setup];
     
+#if SHOWDEBUGINFO
+    [self makePosi];
+#endif
+    
     _renderer = [SCNRenderer rendererWithContext:glView.context options:nil];
     _renderer.scene = mainScene;
     _renderer.pointOfView = cameraNode;
@@ -230,8 +271,8 @@
 {
     // Use Z-Up/Y-Forward because we are using a scene exported from Blender
     GLKMatrix4 lookAt = GLKMatrix4MakeLookAt(0.0f, 0.0f, 0.0f,
-                                             0.0f, 1.0f, 0.0f,
-                                             0.0f, 0.0f, 1.0f);
+                                             0.0f, 0.0f, -1.0f,
+                                             0.0f, 1.0f, 0.0f);
     cameraNode.transform = SCNMatrix4Invert(SCNMatrix4FromGLKMatrix4(GLKMatrix4Multiply([eye eyeViewMatrix], lookAt)));
     [cameraNode.camera setProjectionTransform:SCNMatrix4FromGLKMatrix4([eye perspectiveMatrixWithZNear:0.1f zFar:100.0f])];
     

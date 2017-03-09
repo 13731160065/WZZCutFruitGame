@@ -381,7 +381,7 @@
 				TargetAttributes = {
 					262564481E6D382800479819 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GMLKLDG682;
+						DevelopmentTeam = 4TGUD96RNM;
 						ProvisioningStyle = Automatic;
 					};
 					262564631E6D382800479819 = {
@@ -614,11 +614,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GMLKLDG682;
+				DEVELOPMENT_TEAM = 4TGUD96RNM;
 				INFOPLIST_FILE = WZZCutFruitGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -629,11 +629,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GMLKLDG682;
+				DEVELOPMENT_TEAM = 4TGUD96RNM;
 				INFOPLIST_FILE = WZZCutFruitGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzz.normal2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
