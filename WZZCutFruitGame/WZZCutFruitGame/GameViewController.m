@@ -11,7 +11,7 @@
 #import "WZZRandomShape.h"
 #import "WZZGameHelper.h"
 
-#define SHOWDEBUGINFO 1
+#define SHOWDEBUGINFO 0
 
 @interface GameViewController ()<SCNSceneRendererDelegate, CBDStereoRendererDelegate>
 {
@@ -82,6 +82,7 @@
     if (touches.count == 3) {
         [geoNode removeFromParentNode];
         [self spawnShape];
+        
     }
 }
 
@@ -251,10 +252,12 @@
 }
 - (void)shutdownRendererWithView:(GLKView *)glView
 {
+    NSLog(@"shutdown");
 }
 
 - (void)renderViewDidChangeSize:(CGSize)size
 {
+    NSLog(@"changeSize");
 }
 
 - (void)prepareNewFrameWithHeadViewMatrix:(GLKMatrix4)headViewMatrix
@@ -265,6 +268,8 @@
     // Perform glClear() because using SpriteKit's SKScene as a texture in SceneKit interferes with GL_SCISSOR_TEST
     // If you move glClear() to the start of -drawEyeWithEye:, the left side of the screen is cleared when the right eye is drawn
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
+    NSLog(@"prepareHeadViewMatrix:\n%f, %f, %f, %f\n%f, %f, %f, %f\n%f, %f, %f, %f\n%f, %f, %f, %f", headViewMatrix.m[0], headViewMatrix.m[1], headViewMatrix.m[2], headViewMatrix.m[3], headViewMatrix.m[4], headViewMatrix.m[5], headViewMatrix.m[6], headViewMatrix.m[7], headViewMatrix.m[8], headViewMatrix.m[9], headViewMatrix.m[10], headViewMatrix.m[11], headViewMatrix.m[12], headViewMatrix.m[13], headViewMatrix.m[14], headViewMatrix.m[15]);
 }
 
 - (void)drawEyeWithEye:(CBDEye *)eye
